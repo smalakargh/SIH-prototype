@@ -1,4 +1,5 @@
 import BentoGrid from '@/components/Bento';
+import Footer from '@/components/Footer';
 import PixelBlast from '@/components/Hero-Pixel';
 import Navbar from '@/sm-components/Navbar';
 import React from 'react'
@@ -28,6 +29,7 @@ function page() {
   <Navbar/>
 </div>
 <BentoGrid />
+<Footer/>
 </>
   )
 }

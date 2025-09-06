@@ -131,8 +131,8 @@ function spanClass(col: number, row: number): string {
 export default function BentoSquare(): React.ReactElement {
   return (
     <section className="relative w-full flex items-center justify-center px-3 sm:px-4 py-10 sm:py-16">
-      {/* Brand background */}
-      <div className="absolute inset-0" style={{ backgroundColor: '#000' }} />
+      {/* Brand background (match global background) */}
+      <div className="absolute inset-0" style={{ backgroundColor: 'var(--background)' }} />
       {/* Subtle radial highlight */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.10),transparent_45%)]" />
       {/* Soft grid texture */}
@@ -146,7 +146,7 @@ export default function BentoSquare(): React.ReactElement {
         className="relative z-10 w-full max-w-5xl aspect-[4/5] sm:aspect-[5/4] h-[130vh] sm:h-[100vh]"
       >
         {/* Desktop 4x4 grid; Mobile 2 cols with auto rows */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 sm:grid-rows-4 gap-2.5 sm:gap-4 grid-flow-dense h-full w-full auto-rows-[minmax(90px,1fr)] sm:auto-rows-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 sm:grid-rows-4 gap-2.5 sm:gap-4 grid-flow-dense h-full w-full auto-rows-[minmax(90px,1fr)] sm:auto-rows-auto">
           {items.map((item, idx) => (
             <motion.article
               key={item.id}
