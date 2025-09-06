@@ -1,6 +1,4 @@
-import CardNav from '@/components/Hero-Navbar'
 import PixelBlast from '@/components/Hero-Pixel';
-import logo from '@/public/logo.svg'
 import Navbar from '@/sm-components/Navbar';
 import React from 'react'
 
