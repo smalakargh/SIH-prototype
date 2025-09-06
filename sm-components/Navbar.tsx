@@ -5,7 +5,7 @@ import { TbLocationPin } from 'react-icons/tb'
 
 function Navbar() {
   return (
-    <main className="w-full flex justify-center absolute top-[30px] sm:top-[60px] flex-wrap gap-[140px]">
+    <main className="w-full flex justify-center absolute top-[30px] sm:top-[60px] flex-wrap gap-[140px] sm:gap-[190px]">
       <nav className="w-[90%] sm:w-[60%] bg-white/10 backdrop-blur-md border border-white/20 shadow-md rounded-full h-[60px] flex justify-between items-center px-6">
         <div className="text-white font-caveat flex items-center text-[1.2rem] sm:text-[1.6rem] gap-1">
           <TbLocationPin /> NavigateMe

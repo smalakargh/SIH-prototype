@@ -1,10 +1,11 @@
+import BentoGrid from '@/components/Bento';
 import PixelBlast from '@/components/Hero-Pixel';
 import Navbar from '@/sm-components/Navbar';
 import React from 'react'
 
 function page() {
   return (
-
+<>
 <div className='w-full h-screen relative'>
 <PixelBlast
     variant="square"
@@ -26,6 +27,8 @@ function page() {
   />
   <Navbar/>
 </div>
+<BentoGrid />
+</>
   )
 }
 
