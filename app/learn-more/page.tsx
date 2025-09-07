@@ -71,7 +71,7 @@ export default function LearnMore() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-white/70 text-center max-w-3xl mx-auto mb-12 text-lg"
         >
-          NavigateMe is your emotionally intelligent travel companion. Whether you're commuting, driving, or exploring, we help you move with clarity, confidence, and joy.
+          NavigateMe is your emotionally intelligent travel companion. Whether you&apos;re commuting, driving, or exploring, we help you move with clarity, confidence, and joy.
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

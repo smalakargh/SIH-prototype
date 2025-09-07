@@ -111,7 +111,7 @@ export default function DriverOtpVerification() {
           {digits.map((d, i) => (
             <motion.input
               key={i}
-              ref={(el) => (inputsRef.current[i] = el)}
+              ref={(el) => { inputsRef.current[i] = el; }}
               type="text"
               inputMode="numeric"
               maxLength={1}
