@@ -13,7 +13,7 @@ function Navbar() {
         </div>
 
         <motion.a
-          href="/dashboard"
+          href="/dashboard/user"
           whileHover={{
             scale: 1.1,     
             backgroundColor: "#f0f0f0",
@@ -43,6 +43,7 @@ function Navbar() {
           GET STARTED
         </motion.div>
         </Link>
+        <Link href="/learn-more">
         <motion.div
               whileHover={{
                 scale: 1.05,
@@ -55,7 +56,7 @@ function Navbar() {
         >
           LEARN MORE
         </motion.div>
-
+        </Link>
           <button></button>
         </div>
       </div>

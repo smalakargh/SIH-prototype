@@ -19,7 +19,7 @@ export default function SelectRolePage() {
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 mt-6">
-            <Link href="/">
+            <Link href="/dashboard/driver">
               <motion.div
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
@@ -31,7 +31,7 @@ export default function SelectRolePage() {
               </motion.div>
             </Link>
 
-            <Link href="/">
+            <Link href="/dashboard/user">
               <motion.div
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}

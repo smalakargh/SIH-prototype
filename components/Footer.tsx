@@ -34,7 +34,6 @@ function Footer() {
                 <a href="#features" className="hover:text-white transition-colors">Features</a>
                 <a href="#routes" className="hover:text-white transition-colors">Live Routes</a>
                 <a href="#docs" className="hover:text-white transition-colors">Docs</a>
-                <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
               </nav>
             </div>
 
@@ -63,10 +62,10 @@ function Footer() {
 
           {/* Bottom row */}
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-[12px] text-white/60">© {new Date().getFullYear()} NavigateMe. All rights reserved.</p>
+            <p className="text-[12px] text-white/60">© {new Date().getFullYear()} NavigateMe. made with ❤️ by team SYNTAX.</p>
             <div className="flex items-center gap-3">
               <motion.a
-                href="https://github.com"
+                href="https://github.com/smalakargh"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.12 }}
@@ -76,7 +75,7 @@ function Footer() {
                 <FaGithub size={16} />
               </motion.a>
               <motion.a
-                href="https://linkedin.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.12 }}
@@ -86,7 +85,7 @@ function Footer() {
                 <FaLinkedin size={16} />
               </motion.a>
               <motion.a
-                href="https://twitter.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.12 }}
