@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { TbShieldCheck } from 'react-icons/tb'
 
 export default function DriverOtpVerification() {
-  const length = 8
+  const length = 6
   const [digits, setDigits] = useState<string[]>(Array.from({ length }, () => ''))
   const [focusedIndex, setFocusedIndex] = useState(0)
   const [error, setError] = useState<string | null>(null)
@@ -76,7 +76,7 @@ export default function DriverOtpVerification() {
   const verify = () => {
     const code = digits.join('')
     if (code.length < length || digits.includes('')) {
-      setError('Please enter all 8 digits')
+      setError('Please enter all 6 digits')
       return
     }
     setError(null)
