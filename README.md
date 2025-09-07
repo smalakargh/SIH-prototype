@@ -52,6 +52,8 @@ git clone https://github.com/your-username/navigateme
 cd navigateme
 npm install
 npm run dev
+```
 
+## 👥 Credits
 
 **Built with ❤️ by the _SYNTAX_ team — Led by _Smalakar_**
