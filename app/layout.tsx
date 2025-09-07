@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Poppins, Caveat } from "next/font/google";
 import "./globals.css";
+import "leaflet/dist/leaflet.css";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 
 
 const geistMono = Geist_Mono({

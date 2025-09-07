@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { TbLocationPin } from 'react-icons/tb'
+import Link from 'next/link';
 
 function Navbar() {
   return (
@@ -11,7 +12,8 @@ function Navbar() {
           <TbLocationPin /> NavigateMe
         </div>
 
-        <motion.div
+        <motion.a
+          href="/dashboard"
           whileHover={{
             scale: 1.1,     
             backgroundColor: "#f0f0f0",
@@ -19,14 +21,15 @@ function Navbar() {
           }}
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
-          className="font-poppins bg-white text-black font-[500] text-[13px] sm:text-[14px] sm:px-5 px-4 sm:py-2 py-[7px] rounded-full flex justify-center items-center cursor-pointer"
+          className="font-poppins bg-white text-black font-[500] text-[13px] sm:text-[14px] sm:px-5 px-4 sm:py-2 py-[7px] rounded-full flex justify-center items-center cursor-pointer no-underline"
         >
-          Login
-        </motion.div>
+          Dashboard
+        </motion.a>
       </nav>
       <div className='flex flex-col justify-center items-center font-poppins gap-8'>
         <div className='w-[90%] sm:w-[60%] text-[40px] font-[700] text-center'>Live routes. Local clarity. NavigateMe delivers..</div>
         <div className='flex gap-3'>
+          <Link href="/select-role">
         <motion.div
           whileHover={{
             scale: 1.1,     
@@ -39,6 +42,7 @@ function Navbar() {
         >
           GET STARTED
         </motion.div>
+        </Link>
         <motion.div
               whileHover={{
                 scale: 1.05,
