@@ -27,7 +27,7 @@ function Navbar() {
         </motion.a>
       </nav>
       <div className='flex flex-col justify-center items-center font-poppins gap-8'>
-        <div className='w-[90%] sm:w-[60%] text-[40px] font-[700] text-center'>Live routes. Local clarity. NavigateMe delivers..</div>
+        <div className='w-[90%] sm:w-[60%] text-[40px] font-[700] text-[#fff] text-center'>Live routes. Local clarity. NavigateMe delivers..</div>
         <div className='flex gap-3'>
           <Link href="/select-role">
         <motion.div

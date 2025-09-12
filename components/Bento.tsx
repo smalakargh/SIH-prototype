@@ -36,12 +36,6 @@ const card: Variants = {
   },
 };
 
-/**
- * Layout goal:
- * - Desktop: 4x4 square grid (aspect-square), mixed spans that perfectly fill the square.
- *   We use grid-auto-flow-dense so the items pack tightly.
- * - Mobile: 2x2 square grid with simplified spans to keep readability.
- */
 const items: BentoItem[] = [
   {
     id: 'routes',
