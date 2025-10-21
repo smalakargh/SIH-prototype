@@ -53,6 +53,9 @@ cd navigateme
 npm install
 npm run dev
 ```
+## Update
+**Change01**
+
 
 ## 👥 Credits
 
