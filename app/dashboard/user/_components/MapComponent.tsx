@@ -55,7 +55,11 @@ function stepBus(b: Bus): Bus {
   return { ...b, lat, lng, vx, vy }
 }
 
-export default function MapComponent() {
+interface MapComponentProps {
+  selectedRoute: string | null;
+}
+
+export default function MapComponent({ selectedRoute }: MapComponentProps) {
   const [theme, setTheme] = useState<string>('Light')
   const [buses, setBuses] = useState<Bus[]>([
     {
@@ -114,7 +118,9 @@ export default function MapComponent() {
           attribution="© OpenStreetMap contributors"
         />
 
-        {buses.map((bus) => (
+        {buses
+          .filter(bus => !selectedRoute || bus.route === selectedRoute)
+          .map((bus) => (
           <Marker
             key={bus.id}
             position={[bus.lat, bus.lng]}
