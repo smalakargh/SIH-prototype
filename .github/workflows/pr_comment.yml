@@ -1,20 +1,24 @@
-name: Auto Comment on PR
+# .github/workflows/pr_comment.yml
 
+name: Auto Comment on PR
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize]
+
+permissions:
+  pull-requests: write
 
 jobs:
   comment:
     runs-on: ubuntu-latest
     steps:
-      - name: Add PR Comment
-        uses: actions/github-script@v6
+      - uses: actions/github-script@v6
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.rest.issues.createComment({
+            github.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: "👋 Thanks for your PR! Please make sure to follow the contribution guidelines."
+              body: "Thank you for your contribution!"
             })
