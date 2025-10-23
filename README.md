@@ -55,6 +55,8 @@ npm run dev
 ```
 ## Update
 **Change01**
+**Change02**
+
 
 
 ## 👥 Credits
